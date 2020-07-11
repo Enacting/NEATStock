@@ -16,12 +16,11 @@ class neuralnetwork:
 def relu(X):
     return np.maximum(X, 0)
     
-def softmax(X):
-    e_x = np.exp(X - np.max(X, axis=-1, keepdims=True))
-    return e_x / np.sum(e_x, axis=-1, keepdims=True)
+def softmax(scores):
+  return np.exp(scores)/sum(np.exp(scores), axis=0)
 
 def feed_forward(X, nets):
-    a1 = np.dot(X, nets.W1)
-    z1 = relu(a1)
-    a2 = np.dot(z1, nets.W2)
+    layer1 = np.dot(X, nets.W1)
+    layer2 = relu(layer1)
+    layer3 = np.dot(layer2, nets.W2)
     return softmax(a2)
