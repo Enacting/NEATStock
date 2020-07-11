@@ -11,10 +11,11 @@ I added a few extra algorithms such as a data-bias system based on current event
 Add a regression analysis algorithm to aid with risk analysis. 
 
 # Credits
-https://github.com/CodeReclaimers/neat-python
-https://stackabuse.com/solving-sequence-problems-with-lstm-in-keras-part-2/
-
+> https://github.com/CodeReclaimers/neat-python
+> https://stackabuse.com/solving-sequence-problems-with-lstm-in-keras-part-2/
+> https://github.com/siebenrock/activation-functions/blob/master/activation_functions.ipynb
 
 # Dependencies
 yfinance - To get stock information.
 numpy - reasons. 
+
