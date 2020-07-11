@@ -19,3 +19,5 @@ Add a regression analysis algorithm to aid with risk analysis.
 yfinance - To get stock information.
 numpy - reasons. 
 
+
+![Stonks](https://www.google.com/url?sa=i&url=https%3A%2F%2Fknowyourmeme.com%2Fmemes%2Fstonks&psig=AOvVaw1HkDOQjtSZnb8T6IC4XOfi&ust=1594551538793000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLiJo8KFxeoCFQAAAAAdAAAAABAD)
