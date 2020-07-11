@@ -25,11 +25,11 @@ mutation_rate = 0.1
 neural_evolve = NEAT_simulate.neuro_evolution(population_size, mutation_rate, NN.neuralnetwork,
                               window_size, window_size, close, skip, initial_money)
 fittest_nets = neural_evolve.evolve(50)
-states_buy, states_sell, total_gains, invest = neural_evolve.apply_action(fittest_nets)
+states_buy, states_sell, total_gains, invest, action = neural_evolve.apply_action(fittest_nets)
 
 #Risk shows the spontaneity of dataset because it shows the difficulty the system had in predicting it. 
 #The accuracy varies and if the risk is above 50% then you're better off doing the opposite of what it says. 
 #The closer it is to 50%. the worse it is generally at predicting. 
 
-
+print("I recommend you {}".format(action))
 print("The risk of investing in this stock is: {}".format(str(100-invest)))
