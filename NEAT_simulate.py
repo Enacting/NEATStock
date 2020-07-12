@@ -17,7 +17,7 @@ class neuro_evolution:
         self.skip = skip
         self.initial_money = initial_money
     
-    #I didn't write this bit. 
+
     def _initialize_population(self):
         self.population = []
         for i in range(self.population_size):
