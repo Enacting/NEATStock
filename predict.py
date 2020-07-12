@@ -31,5 +31,10 @@ states_buy, states_sell, total_gains, invest, action = neural_evolve.apply_actio
 #The accuracy varies and if the risk is above 50% then you're better off doing the opposite of what it says. 
 #The closer it is to 50%. the worse it is generally at predicting. 
 
-print("I recommend you {}".format(action))
+if action == 1:
+  act = "Buy"
+else:
+  act = "Sell"
+  
+print("I recommend you {}".format(act))
 print("The risk of investing in this stock is: {}".format(str(100-invest)))
